@@ -60,6 +60,21 @@ input.sheet-settingssheet:checked ~ div * table.sheet-settings {
     display: table !important;
 }
 
+input.sheet-mortalsheet:checked ~ div * tr.sheet-mortal,
+input.sheet-vampiresheet:checked ~ div * tr.sheet-vampire,
+input.sheet-werewolfsheet:checked ~ div * tr.sheet-werewolf,
+input.sheet-magesheet:checked ~ div * tr.sheet-mage,
+input.sheet-prometheansheet:checked ~ div * tr.sheet-promethean,
+input.sheet-changelingsheet:checked ~ div * tr.sheet-changeling,
+input.sheet-geistsheet:checked ~ div * tr.sheet-geist,
+input.sheet-mummysheet:checked ~ div * tr.sheet-mummy,
+input.sheet-demonsheet:checked ~ div * tr.sheet-demon,
+input.sheet-beastsheet:checked ~ div * tr.sheet-beast,
+input.sheet-huntersheet:checked ~ div * tr.sheet-hunter,
+input.sheet-settingssheet:checked ~ div * tr.sheet-settings {
+    display: table-row !important;
+}
+
 input.sheet-settingssheet:checked ~ div.sheet-3colrow,
 input.sheet-settingssheet:checked ~ div.sheet-diceroller,
 input.sheet-settingssheet:checked ~ div.sheet-skills,
@@ -98,8 +113,12 @@ span.sheet-edition {
 }
 
 /* hide othertrait dots on changeling 2nd sheets (2e contracts don't have dots) */
-input.sheet-changelingsheet.sheet-2nd:checked ~ div * td.sheet-changeling.sheet-2nd ~ td.sheet-normal,
-input.sheet-changelingsheet.sheet-2nd:checked ~ div * tr.sheet-changeling.sheet-2nd ~ tr.sheet-normal {
+input.sheet-changelingsheet.sheet-2nd:checked ~ div * table.sheet-othertrait td.sheet-changeling.sheet-2nd ~ td.sheet-normal {
+    display: none;
+}
+
+/* hide morality dots on changeling 2nd sheets (2e clarity uses attr_moralhealth instead) */
+input.sheet-changelingsheet.sheet-2nd:checked ~ div * tbody.sheet-morality tr.sheet-changeling.sheet-2nd ~ tr.sheet-normal {
     display: none;
 }
 
