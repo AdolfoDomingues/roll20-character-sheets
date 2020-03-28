@@ -577,38 +577,6 @@ span.sheet-attr {
     margin-left: -91px;
 }
 
-input.sheet-opt {
-    width: 87px;
-    height: 20px;
-    cursor: pointer;
-    position: relative;
-    opacity: 0;
-    z-index: 9999;
-}
-
-span.sheet-opt {
-    text-align: center;
-    display: inline-block;
-    font-size: 13px;
-    background: #4a6486;
-    color: white;
-    font-weight: bold;
-    border-radius: 4px;
-
-    width: 87px;
-    height: 20px;
-    cursor: pointer;
-    position: relative;
-    margin-left: -91px;
-}
-
-input.sheet-opt:checked + span.sheet-opt
-{
-    background: #ab8b57;
-    color: white;
-    border-radius: 4px;
-}
-
 /* Hide actual dot/checkbox */
 input[type="radio"].sheet-normal,
 input.sheet-weapon,
