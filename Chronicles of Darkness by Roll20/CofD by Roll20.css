@@ -14,92 +14,171 @@
     z-index: -1;
 }
 
-.sheet-mortal,
-.sheet-vampire,
-.sheet-werewolf,
-.sheet-mage,
-.sheet-promethean,
-.sheet-mage,
-.sheet-geist,
-.sheet-changeling,
-.sheet-mummy,
-.sheet-demon,
-.sheet-beast,
-.sheet-hunter,
-.sheet-settings {
+input.sheet-mortalsheet:checked ~ * .sheet-vampire:not(.sheet-mortal),
+input.sheet-mortalsheet:checked ~ * .sheet-werewolf:not(.sheet-mortal),
+input.sheet-mortalsheet:checked ~ * .sheet-mage:not(.sheet-mortal),
+input.sheet-mortalsheet:checked ~ * .sheet-promethean:not(.sheet-mortal),
+input.sheet-mortalsheet:checked ~ * .sheet-changeling:not(.sheet-mortal),
+input.sheet-mortalsheet:checked ~ * .sheet-geist:not(.sheet-mortal),
+input.sheet-mortalsheet:checked ~ * .sheet-hunter:not(.sheet-mortal),
+input.sheet-mortalsheet:checked ~ * .sheet-mummy:not(.sheet-mortal),
+input.sheet-mortalsheet:checked ~ * .sheet-demon:not(.sheet-mortal),
+input.sheet-mortalsheet:checked ~ * .sheet-beast:not(.sheet-mortal) {
     display: none !important;
 }
 
-input.sheet-mortalsheet:checked ~ div * .sheet-mortal,
-input.sheet-vampiresheet:checked ~ div * .sheet-vampire,
-input.sheet-werewolfsheet:checked ~ div * .sheet-werewolf,
-input.sheet-magesheet:checked ~ div * .sheet-mage,
-input.sheet-prometheansheet:checked ~ div * .sheet-promethean,
-input.sheet-changelingsheet:checked ~ div * .sheet-changeling,
-input.sheet-geistsheet:checked ~ div * .sheet-geist,
-input.sheet-mummysheet:checked ~ div * .sheet-mummy,
-input.sheet-demonsheet:checked ~ div * .sheet-demon,
-input.sheet-beastsheet:checked ~ div * .sheet-beast,
-input.sheet-huntersheet:checked ~ div * .sheet-hunter,
-input.sheet-settingssheet:checked ~ div * .sheet-settings {
-    display: inline-block !important;
-}
-
-input.sheet-mortalsheet:checked ~ div * table.sheet-mortal,
-input.sheet-vampiresheet:checked ~ div * table.sheet-vampire,
-input.sheet-werewolfsheet:checked ~ div * table.sheet-werewolf,
-input.sheet-magesheet:checked ~ div * table.sheet-mage,
-input.sheet-prometheansheet:checked ~ div * table.sheet-promethean,
-input.sheet-changelingsheet:checked ~ div * table.sheet-changeling,
-input.sheet-geistsheet:checked ~ div * table.sheet-geist,
-input.sheet-mummysheet:checked ~ div * table.sheet-mummy,
-input.sheet-demonsheet:checked ~ div * table.sheet-demon,
-input.sheet-beastsheet:checked ~ div * table.sheet-beast,
-input.sheet-huntersheet:checked ~ div * table.sheet-hunter,
-input.sheet-settingssheet:checked ~ div * table.sheet-settings {
-    display: table !important;
-}
-
-input.sheet-settingssheet:checked ~ div.sheet-3colrow,
-input.sheet-settingssheet:checked ~ div.sheet-diceroller,
-input.sheet-settingssheet:checked ~ div.sheet-skills,
-input.sheet-settingssheet:checked ~ div.sheet-othertraits,
-input.sheet-settingssheet:checked ~ div.sheet-expandedsheet,
-input.sheet-settingssheet:checked ~ div.sheet-expandedsheet2,
-input.sheet-1st:checked ~ div * .sheet-2nd,
-input.sheet-2nd:checked ~ div * .sheet-1st,
-input.sheet-pages:checked ~ .sheet-gametype,
-input.sheet-pages:checked ~ input.sheet-gametype + span,
-input.sheet-page2:checked ~ div.sheet-3colrow,
-input.sheet-page2:checked ~ div.sheet-diceroller,
-input.sheet-page2:checked ~ div.sheet-skills,
-input.sheet-page2:checked ~ div.sheet-othertraits,
-input.sheet-page3:checked ~ div.sheet-3colrow,
-input.sheet-page3:checked ~ div.sheet-diceroller,
-input.sheet-page3:checked ~ div.sheet-skills,
-input.sheet-page3:checked ~ div.sheet-othertraits {
+input.sheet-vampiresheet:checked ~ * .sheet-mortal:not(.sheet-vampire),
+input.sheet-vampiresheet:checked ~ * .sheet-werewolf:not(.sheet-vampire),
+input.sheet-vampiresheet:checked ~ * .sheet-mage:not(.sheet-vampire),
+input.sheet-vampiresheet:checked ~ * .sheet-promethean:not(.sheet-vampire),
+input.sheet-vampiresheet:checked ~ * .sheet-changeling:not(.sheet-vampire),
+input.sheet-vampiresheet:checked ~ * .sheet-geist:not(.sheet-vampire),
+input.sheet-vampiresheet:checked ~ * .sheet-hunter:not(.sheet-vampire),
+input.sheet-vampiresheet:checked ~ * .sheet-mummy:not(.sheet-vampire),
+input.sheet-vampiresheet:checked ~ * .sheet-demon:not(.sheet-vampire),
+input.sheet-vampiresheet:checked ~ * .sheet-beast:not(.sheet-vampire) {
     display: none !important;
 }
 
-input.sheet-settingssheet:checked ~ div.sheet-settings-spacer {
-    display: block !important;
+input.sheet-werewolfsheet:checked ~ * .sheet-mortal:not(.sheet-werewolf),
+input.sheet-werewolfsheet:checked ~ * .sheet-vampire:not(.sheet-werewolf),
+input.sheet-werewolfsheet:checked ~ * .sheet-mage:not(.sheet-werewolf),
+input.sheet-werewolfsheet:checked ~ * .sheet-promethean:not(.sheet-werewolf),
+input.sheet-werewolfsheet:checked ~ * .sheet-changeling:not(.sheet-werewolf),
+input.sheet-werewolfsheet:checked ~ * .sheet-geist:not(.sheet-werewolf),
+input.sheet-werewolfsheet:checked ~ * .sheet-hunter:not(.sheet-werewolf),
+input.sheet-werewolfsheet:checked ~ * .sheet-mummy:not(.sheet-werewolf),
+input.sheet-werewolfsheet:checked ~ * .sheet-demon:not(.sheet-werewolf),
+input.sheet-werewolfsheet:checked ~ * .sheet-beast:not(.sheet-werewolf) {
+    display: none !important;
 }
 
-input.sheet-page2:checked ~ div.sheet-expandedsheet {
-    display: inline-block;
+input.sheet-magesheet:checked ~ * .sheet-mortal:not(.sheet-mage),
+input.sheet-magesheet:checked ~ * .sheet-vampire:not(.sheet-mage),
+input.sheet-magesheet:checked ~ * .sheet-werewolf:not(.sheet-mage),
+input.sheet-magesheet:checked ~ * .sheet-promethean:not(.sheet-mage),
+input.sheet-magesheet:checked ~ * .sheet-changeling:not(.sheet-mage),
+input.sheet-magesheet:checked ~ * .sheet-geist:not(.sheet-mage),
+input.sheet-magesheet:checked ~ * .sheet-hunter:not(.sheet-mage),
+input.sheet-magesheet:checked ~ * .sheet-mummy:not(.sheet-mage),
+input.sheet-magesheet:checked ~ * .sheet-demon:not(.sheet-mage),
+input.sheet-magesheet:checked ~ * .sheet-beast:not(.sheet-mage) {
+    display: none !important;
 }
 
-input.sheet-page3:checked ~ div.sheet-expandedsheet2 {
-    display: inline-block;
+input.sheet-prometheansheet:checked ~ * .sheet-mortal:not(.sheet-promethean),
+input.sheet-prometheansheet:checked ~ * .sheet-vampire:not(.sheet-promethean),
+input.sheet-prometheansheet:checked ~ * .sheet-werewolf:not(.sheet-promethean),
+input.sheet-prometheansheet:checked ~ * .sheet-mage:not(.sheet-promethean),
+input.sheet-prometheansheet:checked ~ * .sheet-changeling:not(.sheet-promethean),
+input.sheet-prometheansheet:checked ~ * .sheet-geist:not(.sheet-promethean),
+input.sheet-prometheansheet:checked ~ * .sheet-hunter:not(.sheet-promethean),
+input.sheet-prometheansheet:checked ~ * .sheet-mummy:not(.sheet-promethean),
+input.sheet-prometheansheet:checked ~ * .sheet-demon:not(.sheet-promethean),
+input.sheet-prometheansheet:checked ~ * .sheet-beast:not(.sheet-promethean) {
+    display: none !important;
 }
 
-span.sheet-edition {
+input.sheet-changelingsheet:checked ~ * .sheet-mortal:not(.sheet-changeling),
+input.sheet-changelingsheet:checked ~ * .sheet-vampire:not(.sheet-changeling),
+input.sheet-changelingsheet:checked ~ * .sheet-werewolf:not(.sheet-changeling),
+input.sheet-changelingsheet:checked ~ * .sheet-mage:not(.sheet-changeling),
+input.sheet-changelingsheet:checked ~ * .sheet-promethean:not(.sheet-changeling),
+input.sheet-changelingsheet:checked ~ * .sheet-geist:not(.sheet-changeling),
+input.sheet-changelingsheet:checked ~ * .sheet-hunter:not(.sheet-changeling),
+input.sheet-changelingsheet:checked ~ * .sheet-mummy:not(.sheet-changeling),
+input.sheet-changelingsheet:checked ~ * .sheet-demon:not(.sheet-changeling),
+input.sheet-changelingsheet:checked ~ * .sheet-beast:not(.sheet-changeling) {
+    display: none !important;
+}
+
+input.sheet-geistsheet:checked ~ * .sheet-mortal:not(.sheet-geist),
+input.sheet-geistsheet:checked ~ * .sheet-vampire:not(.sheet-geist),
+input.sheet-geistsheet:checked ~ * .sheet-werewolf:not(.sheet-geist),
+input.sheet-geistsheet:checked ~ * .sheet-mage:not(.sheet-geist),
+input.sheet-geistsheet:checked ~ * .sheet-promethean:not(.sheet-geist),
+input.sheet-geistsheet:checked ~ * .sheet-changeling:not(.sheet-geist),
+input.sheet-geistsheet:checked ~ * .sheet-hunter:not(.sheet-geist),
+input.sheet-geistsheet:checked ~ * .sheet-mummy:not(.sheet-geist),
+input.sheet-geistsheet:checked ~ * .sheet-demon:not(.sheet-geist),
+input.sheet-geistsheet:checked ~ * .sheet-beast:not(.sheet-geist) {
+    display: none !important;
+}
+
+input.sheet-huntersheet:checked ~ * .sheet-mortal:not(.sheet-hunter),
+input.sheet-huntersheet:checked ~ * .sheet-vampire:not(.sheet-hunter),
+input.sheet-huntersheet:checked ~ * .sheet-werewolf:not(.sheet-hunter),
+input.sheet-huntersheet:checked ~ * .sheet-mage:not(.sheet-hunter),
+input.sheet-huntersheet:checked ~ * .sheet-promethean:not(.sheet-hunter),
+input.sheet-huntersheet:checked ~ * .sheet-changeling:not(.sheet-hunter),
+input.sheet-huntersheet:checked ~ * .sheet-geist:not(.sheet-hunter),
+input.sheet-huntersheet:checked ~ * .sheet-mummy:not(.sheet-hunter),
+input.sheet-huntersheet:checked ~ * .sheet-demon:not(.sheet-hunter),
+input.sheet-huntersheet:checked ~ * .sheet-beast:not(.sheet-hunter) {
+    display: none !important;
+}
+
+input.sheet-mummysheet:checked ~ * .sheet-mortal:not(.sheet-mummy),
+input.sheet-mummysheet:checked ~ * .sheet-vampire:not(.sheet-mummy),
+input.sheet-mummysheet:checked ~ * .sheet-werewolf:not(.sheet-mummy),
+input.sheet-mummysheet:checked ~ * .sheet-mage:not(.sheet-mummy),
+input.sheet-mummysheet:checked ~ * .sheet-promethean:not(.sheet-mummy),
+input.sheet-mummysheet:checked ~ * .sheet-changeling:not(.sheet-mummy),
+input.sheet-mummysheet:checked ~ * .sheet-geist:not(.sheet-mummy),
+input.sheet-mummysheet:checked ~ * .sheet-hunter:not(.sheet-mummy),
+input.sheet-mummysheet:checked ~ * .sheet-demon:not(.sheet-mummy),
+input.sheet-mummysheet:checked ~ * .sheet-beast:not(.sheet-mummy) {
+    display: none !important;
+}
+
+input.sheet-demonsheet:checked ~ * .sheet-mortal:not(.sheet-demon),
+input.sheet-demonsheet:checked ~ * .sheet-vampire:not(.sheet-demon),
+input.sheet-demonsheet:checked ~ * .sheet-werewolf:not(.sheet-demon),
+input.sheet-demonsheet:checked ~ * .sheet-mage:not(.sheet-demon),
+input.sheet-demonsheet:checked ~ * .sheet-promethean:not(.sheet-demon),
+input.sheet-demonsheet:checked ~ * .sheet-changeling:not(.sheet-demon),
+input.sheet-demonsheet:checked ~ * .sheet-geist:not(.sheet-demon),
+input.sheet-demonsheet:checked ~ * .sheet-hunter:not(.sheet-demon),
+input.sheet-demonsheet:checked ~ * .sheet-mummy:not(.sheet-demon),
+input.sheet-demonsheet:checked ~ * .sheet-beast:not(.sheet-demon) {
+    display: none !important;
+}
+
+input.sheet-beastsheet:checked ~ * .sheet-mortal:not(.sheet-beast),
+input.sheet-beastsheet:checked ~ * .sheet-vampire:not(.sheet-beast),
+input.sheet-beastsheet:checked ~ * .sheet-werewolf:not(.sheet-beast),
+input.sheet-beastsheet:checked ~ * .sheet-mage:not(.sheet-beast),
+input.sheet-beastsheet:checked ~ * .sheet-promethean:not(.sheet-beast),
+input.sheet-beastsheet:checked ~ * .sheet-changeling:not(.sheet-beast),
+input.sheet-beastsheet:checked ~ * .sheet-geist:not(.sheet-beast),
+input.sheet-beastsheet:checked ~ * .sheet-hunter:not(.sheet-beast),
+input.sheet-beastsheet:checked ~ * .sheet-mummy:not(.sheet-beast),
+input.sheet-beastsheet:checked ~ * .sheet-demon:not(.sheet-beast) {
+    display: none !important;
+}
+
+input.sheet-settingssheet:checked ~ .sheet-header,
+input.sheet-settingssheet:not(:checked) ~ .sheet-settings,
+input.sheet-page1:not(:checked) ~ .sheet-main,
+input.sheet-page2:not(:checked) ~ .sheet-expandedsheet,
+input.sheet-page3:not(:checked) ~ .sheet-expandedsheet2,
+input.sheet-1st-sheet:checked ~ * .sheet-2nd,
+input.sheet-2nd-sheet:checked ~ * .sheet-1st {
+    display: none !important;
+}
+
+.sheet-rolltemplates {
+    display: none;
+}
+
+.sheet-edition {
     font-weight: bold;
 }
 
 /* hide othertrait dots on changeling 2nd sheets (2e contracts don't have dots) */
-input.sheet-changelingsheet.sheet-2nd:checked ~ div * td.sheet-changeling.sheet-2nd ~ td.sheet-normal,
-input.sheet-changelingsheet.sheet-2nd:checked ~ div * tr.sheet-changeling.sheet-2nd ~ tr.sheet-normal {
+input.sheet-changelingsheet:checked ~ input.sheet-2nd-sheet:checked ~ * table.sheet-othertrait td.sheet-changeling.sheet-2nd ~ td.sheet-normal,
+/* hide morality dots on changeling 2nd sheets (2e clarity uses attr_moralhealth instead) */
+input.sheet-changelingsheet:checked ~ input.sheet-2nd-sheet:checked ~ * tbody.sheet-morality tr.sheet-changeling.sheet-2nd ~ tr.sheet-normal {
     display: none;
 }
 
@@ -112,287 +191,184 @@ input.sheet-changelingsheet.sheet-2nd:checked ~ div * tr.sheet-changeling.sheet-
     right: 0;
     position: absolute;
     z-index: -1;
+    /* Not sure why `!important` is necessary here */
+    background-size: 100% !important;
 }
 
-input.sheet-sheetoptions + span.sheet-attr {
+input.sheet-mortalsheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/chronicles-bg.jpg');
+    opacity: 0.2
+}
+
+input.sheet-vampiresheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/vampire-bg.jpg');
+}
+
+input.sheet-werewolfsheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/werewolf-bg.png');
+}
+
+input.sheet-magesheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/mage-bg.png');
+}
+
+input.sheet-prometheansheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/promethean-bg.png');
+}
+
+input.sheet-changelingsheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/changeling-bg.png');
+}
+
+input.sheet-geistsheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/deemlbag.png');
+}
+
+input.sheet-mummysheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/mummy-bg.jpg');
+}
+
+input.sheet-demonsheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/demon-bg.png');
+}
+
+input.sheet-beastsheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/beast-bg.png');
+}
+
+input.sheet-huntersheet:checked ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/hunter-bg.png');
+}
+
+/* HEADER IMAGE */
+.sheet-header {
+    display: flex;
+    justify-content: center;
+    min-height: 185px;
+}
+
+.sheet-header img.sheet-mortal,
+.sheet-header img.sheet-vampire,
+.sheet-header img.sheet-werewolf,
+.sheet-header img.sheet-mage,
+.sheet-header img.sheet-promethean,
+.sheet-header img.sheet-changeling {
+    height: 150px;
+}
+
+.sheet-header img.sheet-hunter {
+    height: 120px;
+}
+
+.sheet-header img.sheet-geist,
+.sheet-header img.sheet-demon {
+    height: 200px;
+}
+
+input.sheet-attr + span.sheet-attr {
     background: white;
     border-radius: 4px;
     padding-left: 2px;
     padding-right: 2px;
 }
 
-input.sheet-mortalsheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/chronicles-bg.jpg');
-    background-size: 100% 100%;
-    opacity: 0.2
-}
-
-input.sheet-vampiresheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/vampire-bg.jpg');
-    background-size: 100% 105%;
-}
-
-input.sheet-werewolfsheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/werewolf-bg.png');
-    background-size: 100% 100%;
-}
-
-input.sheet-magesheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/mage-bg.png');
-    background-size: 100% 100%;
-}
-
-input.sheet-prometheansheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/promethean-bg.png');
-    background-size: 100% 100%;
-}
-
-input.sheet-changelingsheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/changeling-bg.png');
-    background-size: 100% 102%;
-}
-
-input.sheet-geistsheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/deemlbag.png');
-    background-size: 100% 100%;
-}
-
-input.sheet-mummysheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/mummy-bg.jpg');
-    background-size: 100% 100%;
-}
-
-input.sheet-demonsheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/demon-bg.png');
-    background-size: 100% 100%;
-}
-
-input.sheet-beastsheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/beast-bg.png');
-    background-size: 100% 101%;
-}
-
-input.sheet-huntersheet:checked ~ .sheet-background-image::after {
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/hunter-bg.png');
-    background-size: 100% 100%;
-}
-
-input.sheet-settingssheet:checked ~ .sheet-background-image::after,
-input.sheet-page2:checked ~ .sheet-background-image::after,
-input.sheet-page3:checked ~ .sheet-background-image::after{
-    background-size: 100%;
-}
-
-/* HEADER IMAGE */
-input.sheet-settingssheet:not(:checked) ~ input.sheet-mortalsheet:checked ~ img.sheet-header.sheet-mortal,
-input.sheet-settingssheet:not(:checked) ~ input.sheet-vampiresheet:checked ~ img.sheet-header.sheet-vampire,
-input.sheet-settingssheet:not(:checked) ~ input.sheet-werewolfsheet:checked ~ img.sheet-header.sheet-werewolf,
-input.sheet-settingssheet:not(:checked) ~ input.sheet-magesheet:checked ~ img.sheet-header.sheet-mage,
-input.sheet-settingssheet:not(:checked) ~ input.sheet-prometheansheet:checked ~ img.sheet-header.sheet-promethean,
-input.sheet-settingssheet:not(:checked) ~ input.sheet-changelingsheet:checked ~ img.sheet-header.sheet-changeling,
-input.sheet-settingssheet:not(:checked) ~ input.sheet-huntersheet:checked ~ img.sheet-header.sheet-hunter {
-    height: 150px;
-    display: inline !important;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-input.sheet-settingssheet:not(:checked) ~ input.sheet-geistsheet:checked ~ img.sheet-header.sheet-geist,
-input.sheet-settingssheet:not(:checked) ~ input.sheet-demonsheet:checked ~ img.sheet-header.sheet-demon{
-    height: 200px;
-    display: inline !important;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-input.sheet-settingssheet:not(:checked) ~ input.sheet-huntersheet:checked ~ img.sheet-header.sheet-hunter {
-    top: 50px;
-    height: 120px;
-}
-
-input.sheet-settingssheet:checked ~ .sheet-header + .sheet-settings {
-    height: 200px;
-    display: block !important;
-}
-
-input.sheet-settingssheet:checked + span.sheet-attr,
-input.sheet-page1:checked + span.sheet-attr,
-input.sheet-page2:checked + span.sheet-attr,
-input.sheet-page3:checked + span.sheet-attr{
-    color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
-}
-
-input.sheet-settingssheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-sheetoptions.sheet-settingssheet:checked +span.sheet-attr {
-    color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
-}
-
-input.sheet-settingssheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
+input.sheet-attr:checked + span.sheet-attr,
+.sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #2A2D80;
     text-shadow: 0px 0px 10px black;
     font-weight: bold;
 }
 
-input.sheet-mortalsheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-mortalsheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-sheetoptions.sheet-mortalsheet:checked +span.sheet-attr {
-    color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
-}
-
-input.sheet-mortalsheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
+input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     font-weight: bold;
 }
 
-input.sheet-vampiresheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-vampiresheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-sheetoptions.sheet-vampiresheet:checked +span.sheet-attr {
+input.sheet-attr.sheet-mortalsheet:checked + span.sheet-attr,
+input.sheet-mortalsheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-mortalsheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-mortalsheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
+    color: #2A2D80;
+}
+
+input.sheet-attr.sheet-vampiresheet:checked + span.sheet-attr,
+input.sheet-vampiresheet:checked ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-vampiresheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-vampiresheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-vampiresheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #B21800;
-    text-shadow: 0px 0px 10px black;
 }
 
-input.sheet-vampiresheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #B21800;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
-}
-
-input.sheet-werewolfsheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-werewolfsheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-werewolfsheet:checked ~ div * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
-input.sheet-sheetoptions.sheet-werewolfsheet:checked +span.sheet-attr {
+input.sheet-attr.sheet-werewolfsheet:checked + span.sheet-attr,
+input.sheet-werewolfsheet:checked ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-werewolfsheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-werewolfsheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-werewolfsheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #E9813E;
-    text-shadow: 0px 0px 10px black;
 }
 
-input.sheet-werewolfsheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #E9813E;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
-}
-
-input.sheet-magesheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-magesheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-magesheet:checked ~ div * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
-input.sheet-sheetoptions.sheet-magesheet:checked +span.sheet-attr {
+input.sheet-attr.sheet-magesheet:checked + span.sheet-attr,
+input.sheet-magesheet:checked ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-magesheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-magesheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-magesheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #0000FF;
-    text-shadow: 0px 0px 10px black;
 }
 
-input.sheet-magesheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #0000FF;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
-}
-
-input.sheet-prometheansheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-prometheansheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-prometheansheet:checked ~ div * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
-input.sheet-sheetoptions.sheet-prometheansheet:checked +span.sheet-attr {
+input.sheet-attr.sheet-prometheansheet:checked + span.sheet-attr,
+input.sheet-prometheansheet:checked ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-prometheansheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-prometheansheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-prometheansheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #660099;
-    text-shadow: 0px 0px 10px black;
 }
 
-input.sheet-prometheansheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #660099;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
-}
-
-input.sheet-changelingsheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-changelingsheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-changelingsheet:checked ~ div * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
-input.sheet-sheetoptions.sheet-changelingsheet:checked +span.sheet-attr {
+input.sheet-attr.sheet-changelingsheet:checked + span.sheet-attr,
+input.sheet-changelingsheet:checked ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-changelingsheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-changelingsheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-changelingsheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #006600;
-    text-shadow: 0px 0px 10px black;
 }
 
-input.sheet-changelingsheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #006600;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
-}
-
-input.sheet-geistsheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-geistsheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-geistsheet:checked ~ div * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
-input.sheet-sheetoptions.sheet-geistsheet:checked +span.sheet-attr {
+input.sheet-attr.sheet-geistsheet:checked + span.sheet-attr,
+input.sheet-geistsheet:checked ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-geistsheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-geistsheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-geistsheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #00CCFF;
-    text-shadow: 0px 0px 10px black;
 }
 
-input.sheet-geistsheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #00CCFF;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
-}
-
-input.sheet-mummysheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-mummysheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-mummysheet:checked ~ div * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
-input.sheet-sheetoptions.sheet-mummysheet:checked +span.sheet-attr {
+input.sheet-attr.sheet-mummysheet:checked + span.sheet-attr,
+input.sheet-mummysheet:checked ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-mummysheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-mummysheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-mummysheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #996600;
-    text-shadow: 0px 0px 10px black;
 }
 
-input.sheet-mummysheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #996600;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
-}
-
-input.sheet-demonsheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-demonsheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-sheetoptions.sheet-demonsheet:checked +span.sheet-attr {
+input.sheet-attr.sheet-demonsheet:checked + span.sheet-attr,
+input.sheet-demonsheet:checked ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-demonsheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-demonsheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-demonsheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
 }
 
-input.sheet-demonsheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
+input.sheet-attr.sheet-beastsheet:checked + span.sheet-attr,
+input.sheet-beastsheet:checked ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-beastsheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-beastsheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-beastsheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
 }
 
-input.sheet-beastsheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-beastsheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-sheetoptions.sheet-beastsheet:checked +span.sheet-attr {
+input.sheet-attr.sheet-huntersheet:checked + span.sheet-attr,
+input.sheet-huntersheet:checked ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-huntersheet:checked ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-huntersheet:checked ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-huntersheet:checked ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
-}
-
-input.sheet-beastsheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
-}
-
-input.sheet-huntersheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-huntersheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-sheetoptions.sheet-huntersheet:checked +span.sheet-attr {
-    color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
-}
-
-input.sheet-huntersheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
-}
-
-.sheet-expandedsheet,
-.sheet-expandedsheet2,
-.sheet-rolltemplates {
-    display: none;
 }
 
 .sheet-el_spacer {
@@ -467,7 +443,6 @@ input.sheet-huntersheet:checked ~ div * input.sheet-weapon:checked + span + .she
 
 .charsheet .sheet-3colrow table {
     width: 100%;
-    margin-top: 18px;
     border-collapse: separate;
 }
 
