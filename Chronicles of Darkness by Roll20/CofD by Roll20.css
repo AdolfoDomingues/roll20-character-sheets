@@ -304,6 +304,7 @@ input.sheet-page3-sheet:checked ~ .sheet-background-image::after {
     .sheet-header img.sheet-demonfallen, {
         height: 85px;
     }
+
     button.sheet-toggle {
         /* Resetting user-agent styling */
         font-family: inherit;
