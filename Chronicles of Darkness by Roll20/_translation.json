@@ -353,7 +353,7 @@
   "the-boneyard": "The Boneyard",
   "the-caul": "The Caul",
   "the-curse": "The Curse",
-  "the-dirge":  "The Dirge",
+  "the-dirge": "The Dirge",
   "the-marionette": "The Marionette",
   "the-memoria": "The Memoria",
   "the-oracle": "The Oracle",
@@ -361,5 +361,7 @@
   "the-shroud": "The Shroud",
   "the-tomb": "The Tomb",
   "the-void": "The Void",
-  "the-well": "The Well"
+  "the-well": "The Well",
+  "piper": "Piper the Hazórus Heralds",
+  "grace": "Grace"
 }

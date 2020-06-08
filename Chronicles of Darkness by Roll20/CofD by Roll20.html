@@ -75,6 +75,8 @@
 
         <button type="action" class="toggle active-demonfallen" name="act_sheet_type_demonfallen" title="DemonFallen" data-i18n="demon-the-fallen">Demon the Fallen</button>
 
+        <button type="action" class="toggle active-piper" name="act_sheet_type_piper" title="piper" data-i18n="piper">Piper the Hazórus Heralds</button>
+
         <button type="action" class="toggle active-beast" name="act_sheet_type_beast" title="Beast" data-i18n="beast-the-primordial">Beast the Primordial</button>
 
         <!-- <button type="action" class="toggle active-deviant" name="act_sheet_type_deviant" title="Deviant" data-i18n="deviant-the-renegades">Deviant the Renegades</button> -->
@@ -214,7 +216,8 @@
     <img class="geist" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/geist.png">
     <img class="hunter" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/hunter.png">
     <img class="demon" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/DtD_logo.png">
-    <img class="demonfallen" src="https://imgsrv.roll20.net/?src=https%3A//raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CWOD-Demon/img/header.png" width="853" height="85">
+    <img class="demonfallen" src="https://imgsrv.roll20.net/?src=https%3A//raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CWOD-Demon/img/header.png">
+    <img class="piper" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/chroniclesofdarkness.png">
     <!-- <img class="deviant" src=""> -->
 </div>
 
@@ -229,7 +232,7 @@
         <input type="text" name="attr_character_name">
         <div class="spacer"></div>
         <div class="input-label">
-            <span class="mortal vampire1 werewolf1 mage promethean1 changeling1 geist1 geist2-organization mummy1 hunter demon" data-i18n="virtue" >Virtue:</span>
+            <span class="mortal vampire1 werewolf1 mage promethean1 changeling1 geist1 geist2-organization mummy1 hunter demon piper" data-i18n="virtue" >Virtue:</span>
             <span class="vampire2" data-i18n="mask" >Mask:</span>
             <span class="werewolf2" data-i18n="blood" >Blood:</span>
             <span class="beast" data-i18n="life" >Life:</span>
@@ -237,6 +240,7 @@
             <span class="changeling2" data-i18n="needle" >Needle:</span>
             <span class="geist2" data-i18n="root" >Root:</span>
             <span class="demonfallen" data-i18n="nature" >Nature:</span>
+            
         </div>
         <input type="text" name="attr_Virtue">
         <div class="spacer"></div>
@@ -252,20 +256,21 @@
             <span class="geist2" data-i18n="geist-c" >Geist:</span>
             <span class="mummy" data-i18n="decree" >Decree:</span>
             <span class="demon" data-i18n="incarnation" >Incarnation:</span>
-            <span class="beast" data-i18n="family" >Family:</span>
+            <span class="beast" data-i18n="family" >Family:</span
+            <span class="piper" data-i18n="family" >Family:</span>
             <span class="hunter" data-i18n="profession" >Profession:</span>
             <span class="demonfallen" data-i18n="house" >House:</span>
         </div>
         <input type="text" name="attr_Chronicle">
         <!-- Row 2 -->
         <div class="input-label">
-            <span class="mortal1 mortal2 vampire werewolf mage promethean changeling geist1 mummy hunter demon demonfallen" data-i18n="player">Player:</span>
+            <span class="mortal1 mortal2 vampire werewolf mage promethean changeling geist1 mummy hunter demon demonfallen piper" data-i18n="player">Player:</span>
             <span class="geist2-organization" data-i18n="archtype">Archetype:</span>
         </div>
         <input type="text" name="attr_Age">
         <div class="spacer"></div>
         <div class="input-label">
-            <span class="mortal1 mortal2 vampire1 werewolf1 mage promethean1 changeling1 geist1 mummy1 hunter demon" data-i18n="vice" >Vice:</span>
+            <span class="mortal1 mortal2 vampire1 werewolf1 mage promethean1 changeling1 geist1 mummy1 hunter demon piper" data-i18n="vice" >Vice:</span>
             <span class="mortal2-organization geist2-organization" data-i18n="creed" >Creed:</span>
             <span class="vampire2" data-i18n="dirge" >Dirge:</span>
             <span class="werewolf2" data-i18n="bone" >Bone:</span>
@@ -290,6 +295,7 @@
             <span class="mummy" data-i18n="guild" >Guild:</span>
             <span class="demon" data-i18n="agenda" >Agenda:</span>
             <span class="beast" data-i18n="hunger" >Hunger:</span>
+            <span class="piper" data-i18n="hunger" >Hunger:</span>
             <span class="hunter" data-i18n="compact" >Compact/Conspiracy:</span>
             <span class="demonfallen" data-i18n="faction" >Faction:</span>
         </div>
@@ -319,6 +325,7 @@
             <span class="demon" data-i18n="catalyst" >Catalyst:</span>
             <span class="demonfallen" data-i18n="visage" >Visage:</span>
             <span class="beast" data-i18n="horror" >Horror:</span>
+            <span class="piper" data-i18n="horror" >Capital Sin:</span>
         </div>
         <input type="text" name="attr_GroupName">
     </div>
@@ -341,9 +348,9 @@
                     </td>
                     <td>
                         <input type="radio" class="dot zero" name="attr_Intelligence" value="0" /><span></span><input type="radio" class="dot" name="attr_Intelligence" value="1" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Intelligence" value="2" /><span></span><input type="radio" class="dot" name="attr_Intelligence" value="3" /><span></span><input type="radio" class="dot" name="attr_Intelligence" value="4" /><span></span><input type="radio" class="dot" name="attr_Intelligence" value="5" /><span></span>
-                        <!-- For Attributes above 6, at some point I'll make this something optional
+                       
                         <input type="radio" class="dot" name="attr_Intelligence" value="6" /><span></span><input type="radio" class="dot" name="attr_Intelligence" value="7" /><span></span><input type="radio" class="dot" name="attr_Intelligence" value="8" /><span></span><input type="radio" class="dot" name="attr_Intelligence" value="9" /><span></span><input type="radio" class="dot" name="attr_Intelligence" value="10" /><span></span>
-                        -->
+                     
                     </td>
                     <td rowspan="3" class="spacer"></td>
                     <td>
@@ -352,9 +359,9 @@
                     </td>
                     <td>
                         <input type="radio" class="dot zero" name="attr_Strength" value="0" /><span></span><input type="radio" class="dot" name="attr_Strength" value="1" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Strength" value="2" /><span></span><input type="radio" class="dot" name="attr_Strength" value="3" /><span></span><input type="radio" class="dot" name="attr_Strength" value="4" /><span></span><input type="radio" class="dot" name="attr_Strength" value="5" /><span></span>
-                        <!-- For Attributes above 6, at some point I'll make this something optional
+                      
                         <input type="radio" class="dot" name="attr_Strength" value="6" /><span></span><input type="radio" class="dot" name="attr_Strength" value="7" /><span></span><input type="radio" class="dot" name="attr_Strength" value="8" /><span></span><input type="radio" class="dot" name="attr_Strength" value="9" /><span></span><input type="radio" class="dot" name="attr_Strength" value="10" /><span></span>
-                        -->
+                    
                             </td>
                     <td rowspan="3" class="spacer"></td>
                     <td>
@@ -363,9 +370,9 @@
                     </td>
                     <td>
                         <input type="radio" class="dot zero" name="attr_Presence" value="0" /><span></span><input type="radio" class="dot" name="attr_Presence" value="1" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Presence" value="2" /><span></span><input type="radio" class="dot" name="attr_Presence" value="3" /><span></span><input type="radio" class="dot" name="attr_Presence" value="4" /><span></span><input type="radio" class="dot" name="attr_Presence" value="5" /><span></span>
-                        <!-- For Attributes above 6, at some point I'll make this something optional
+                        
                         <input type="radio" class="dot" name="attr_Presence" value="6" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Presence" value="7" /><span></span><input type="radio" class="dot" name="attr_Presence" value="8" /><span></span><input type="radio" class="dot" name="attr_Presence" value="9" /><span></span><input type="radio" class="dot" name="attr_Presence" value="10" /><span></span>
-                        -->
+                        
                            </td>
                 </tr>
                 <tr>
@@ -375,9 +382,9 @@
                     </td>
                     <td>
                         <input type="radio" class="dot zero" name="attr_Wits" value="0" /><span></span><input type="radio" class="dot" name="attr_Wits" value="1" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Wits" value="2" /><span></span><input type="radio" class="dot" name="attr_Wits" value="3" /><span></span><input type="radio" class="dot" name="attr_Wits" value="4" /><span></span><input type="radio" class="dot" name="attr_Wits" value="5" /><span></span>
-                        <!-- For Attributes above 6, at some point I'll make this something optional
+                       
                         <input type="radio" class="dot" name="attr_Wits" value="6" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Wits" value="7" /><span></span><input type="radio" class="dot" name="attr_Wits" value="8" /><span></span><input type="radio" class="dot" name="attr_Wits" value="9" /><span></span><input type="radio" class="dot" name="attr_Wits" value="10" /><span></span>
-                        -->
+                      
                         </td>
                     <td>
                         <input type="checkbox" class="attr" name="attr_Dexterity_flag" value="@{dexterity}" />
@@ -385,9 +392,9 @@
                     </td>
                     <td>
                         <input type="radio" class="dot zero" name="attr_Dexterity" value="0" /><span></span><input type="radio" class="dot" name="attr_Dexterity" value="1" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Dexterity" value="2" /><span></span><input type="radio" class="dot" name="attr_Dexterity" value="3" /><span></span><input type="radio" class="dot" name="attr_Dexterity" value="4" /><span></span><input type="radio" class="dot" name="attr_Dexterity" value="5" /><span></span>
-                        <!-- For Attributes above 6, at some point I'll make this something optional
+                       
                         <span></span><input type="radio" class="dot" name="attr_Dexterity" value="6" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Dexterity" value="7" /><span></span><input type="radio" class="dot" name="attr_Dexterity" value="8" /><span></span><input type="radio" class="dot" name="attr_Dexterity" value="9" /><span></span><input type="radio" class="dot" name="attr_Dexterity" value="10" /><span></span>
-                        -->
+                        
                     </td>
                     <td>
                         <input type="checkbox" class="attr" name="attr_Manipulation_flag" value="@{manipulation}" />
@@ -395,9 +402,9 @@
                     </td>
                     <td>
                         <input type="radio" class="dot zero" name="attr_Manipulation" value="0" /><span></span><input type="radio" class="dot" name="attr_Manipulation" value="1" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Manipulation" value="2" /><span></span><input type="radio" class="dot" name="attr_Manipulation" value="3" /><span></span><input type="radio" class="dot" name="attr_Manipulation" value="4" /><span></span><input type="radio" class="dot" name="attr_Manipulation" value="5" /><span></span>
-                        <!-- For Attributes above 6, at some point I'll make this something optional
+                       
                         <input type="radio" class="dot" name="attr_Manipulation" value="6" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Manipulation" value="7" /><span></span><input type="radio" class="dot" name="attr_Manipulation" value="8" /><span></span><input type="radio" class="dot" name="attr_Manipulation" value="9" /><span></span><input type="radio" class="dot" name="attr_Manipulation" value="10" /><span></span>
-                        -->
+                       
                     </td>
                 </tr>
                 <tr>
@@ -408,9 +415,9 @@
                     </td>
                     <td>
                         <input type="radio" class="dot zero" name="attr_Resolve" value="0" /><span></span><input type="radio" class="dot" name="attr_Resolve" value="1" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Resolve" value="2" /><span></span><input type="radio" class="dot" name="attr_Resolve" value="3" /><span></span><input type="radio" class="dot" name="attr_Resolve" value="4" /><span></span><input type="radio" class="dot" name="attr_Resolve" value="5" /><span></span>
-                        <!-- For Attributes above 6, at some point I'll make this something optional
+                        
                         <input type="radio" class="dot" name="attr_Resolve" value="6" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Resolve" value="7" /><span></span><input type="radio" class="dot" name="attr_Resolve" value="8" /><span></span><input type="radio" class="dot" name="attr_Resolve" value="9" /><span></span><input type="radio" class="dot" name="attr_Resolve" value="10" /><span></span>
-                        -->
+                       
                     </td>
                     <td>
                         <input type="checkbox" class="attr" name="attr_Stamina_flag" value="@{stamina}" />
@@ -418,9 +425,9 @@
                     </td>
                     <td>
                         <input type="radio" class="dot zero" name="attr_Stamina" value="0" /><span></span><input type="radio" class="dot" name="attr_Stamina" value="1" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Stamina" value="2" /><span></span><input type="radio" class="dot" name="attr_Stamina" value="3" /><span></span><input type="radio" class="dot" name="attr_Stamina" value="4" /><span></span><input type="radio" class="dot" name="attr_Stamina" value="5" /><span></span>
-                        <!-- For Attributes above 6, at some point I'll make this something optional  
+                       
                         <input type="radio" class="dot" name="attr_Stamina" value="6" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Stamina" value="7" /><span></span><input type="radio" class="dot" name="attr_Stamina" value="8" /><span></span><input type="radio" class="dot" name="attr_Stamina" value="9" /><span></span><input type="radio" class="dot" name="attr_Stamina" value="10" /><span></span>
-                        -->
+                       
                     </td>
                     <td>
                         <input type="checkbox" class="attr" name="attr_Composure_flag" value="@{composure}" />
@@ -428,9 +435,9 @@
                     </td>
                     <td>
                         <input type="radio" class="dot zero" name="attr_Composure" value="0" /><span></span><input type="radio" class="dot" name="attr_Composure" value="1" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Composure" value="2" /><span></span><input type="radio" class="dot" name="attr_Composure" value="3" /><span></span><input type="radio" class="dot" name="attr_Composure" value="4" /><span></span><input type="radio" class="dot" name="attr_Composure" value="5" /><span></span> 
-                        <!-- For Attributes above 6, at some point I'll make this something optional
+
                         <input type="radio" class="dot" name="attr_Composure" value="6" checked="checked" /><span></span><input type="radio" class="dot" name="attr_Composure" value="7" /><span></span><input type="radio" class="dot" name="attr_Composure" value="8" /><span></span><input type="radio" class="dot" name="attr_Composure" value="9" /><span></span><input type="radio" class="dot" name="attr_Composure" value="10" /><span></span>   
-                        -->
+                        
                     </td>
                 </tr>
             </tbody>
@@ -959,7 +966,7 @@
                         </div>
                         <div class="horizontal-spacer"></div>
                         <!-- OTHER TRAITS -->
-                        <div class="mortal werewolf promethean changeling geist1 mummy hunter demon beast demonfallen">
+                        <div class="mortal werewolf promethean changeling geist1 mummy hunter demon beast piper demonfallen">
                             <div class="subheader">
                                 <span class="mortal1 mortal2" data-i18n="other" >Other</span>
                                 <span class="organization" data-i18n="ceremonies" >Ceremonies</span>
@@ -971,6 +978,7 @@
                                 <span class="mummy" data-i18n="pillars" >Pillars</span>
                                 <span class="demon" data-i18n="embeds-explo" >Embeds/Exploits</span>
                                 <span class="beast" data-i18n="nightmares-atavisms" >Nightmares/Atavisms</span>
+                                <span class="piper" data-i18n="nightmares-atavisms" >Nightmares/Atavisms</span>
                                 <span class="hunter" data-i18n="endowments" >Endowments</span>
                                 <span class="demonfallen" data-i18n="lore" >Lores</span>
                             </div>
@@ -2208,6 +2216,7 @@
                                 <span class="mummy" data-i18n="memory" >Memory</span>
                                 <span class="demon" data-i18n="cover" >Cover</span>
                                 <span class="beast" data-i18n="satiety" >Satiety</span>
+                                <span class="piper" data-i18n="satiety" >Satiety</span>
                                 <span class="demonfallen" data-i18n="demon-torment" >Torment</span>
                             </td>
                         </tr>
@@ -2257,7 +2266,7 @@
                             </table>
                         </td>
                     </tr>
-                    <tr class="mortal2-organization vampire werewolf mage promethean changeling geist1 geist2-organization geist2 mummy demon beast demonfallen">
+                    <tr class="mortal2-organization vampire werewolf mage promethean changeling geist1 geist2-organization geist2 mummy demon beast piper demonfallen">
                         <td>
                             <table class="potency">
                                 <tr>
@@ -2275,6 +2284,7 @@
                                         <span class="attr mummy" style="font-size: 1em;" data-i18n="sekhem" >Sekhem</span>
                                         <span class="attr demon" style="font-size: 1em;" data-i18n="primum" >Primum</span>
                                         <span class="attr beast" style="font-size: 1em;" data-i18n="lair" >Lair</span>
+                                        <span class="attr piper" style="font-size: 1em;" data-i18n="grace" >Grace</span>
                                         <span class="attr demonfallen" style="font-size: 1em;" data-i18n="faith" >Faith</span>
                                     </td>
                                 </tr>
@@ -2308,7 +2318,7 @@
                     <tr>
                         <td class="el_spacer"></td>
                     </tr>
-                    <tbody class="vampire werewolf mage promethean changeling geist1 geist2 mummy demon beast">
+                    <tbody class="vampire werewolf mage promethean changeling geist1 geist2 mummy demon beast piper">
                         <tr>
                             <td>
                                 <table class="potency">
@@ -2671,7 +2681,7 @@
             </div>
             <br>
         </div>
-        <div class="beast">
+        <div class="beast piper">
             <div class="sheet-customroll">
                 <span class="subheader" data-i18n="satiety-preferences" >Satiety Preferences</span><br>
                 <textarea rows="2" cols="40" name="attr_satietypreferences"></textarea>
@@ -2735,6 +2745,7 @@
             <span class="subheader geist2" data-i18n="cenote" >Cenote</span>
             <span class="subheader demon" data-i18n="bolthole" >Bolthole</span>
             <span class="subheader beast" data-i18n="lair" >Lair</span>
+            <span class="subheader piper" data-i18n="bolthole" >Bolthole</span>
             <br>
             <textarea rows="2" cols="40" name="attr_residence"></textarea>
         </div>
@@ -2882,7 +2893,7 @@
             </div>
             <br>
         </div>
-        <div class="beast">
+        <div class="beast piper">
             <div class="sheet-customroll">
                 <span class="subheader" data-i18n="horror" >Horror</span><br>
                 <textarea rows="2" cols="40" name="attr_horror"></textarea>
@@ -3337,7 +3348,7 @@
     var normalStats = [ ...attributes, ...skills ];
     var powers = ["animalism","auspex","celerity","dominate","majesty","nightmare","obfuscate","protean","resilience","vigor","crúac","thebansorcery","death","fate","forces","life","matter","mind","prime","spirit","space","time", "the-boneyard", "the-caul", "the-curse", "the-dirge", "the-marionette", "the-memoria", "the-oracle", "the-rage", "the-shroud", "the-tomb", "the-void", "the-well"];
     var allStats = [ ...attributes, ...skills, ...powers, "potency" ];
-    var potencyNames = { mortal1:"", mortal2:"", "mortal2-organization":"Standing", vampire1:"Blood Potency", vampire2:"Blood Potency", werewolf1:"Primal Urge", werewolf2:"Primal Urge", mage1:"Gnosis", mage2:"Gnosis", promethean1:"Azoth", promethean2:"Azoth", changeling1:"Wyrd", changeling2:"Wyrd", demon:"Primum", beast:"Lair", hunter:"", geist1:"Psyche", geist2:"Synergy", "geist2-organization":"Esotery", mummy1:"Sekhem", demonfallen:"Faith" };
+    var potencyNames = { mortal1:"", mortal2:"", "mortal2-organization":"Standing", vampire1:"Blood Potency", vampire2:"Blood Potency", werewolf1:"Primal Urge", werewolf2:"Primal Urge", mage1:"Gnosis", mage2:"Gnosis", promethean1:"Azoth", promethean2:"Azoth", changeling1:"Wyrd", changeling2:"Wyrd", demon:"Primum", beast:"Lair", hunter:"", geist1:"Psyche", geist2:"Synergy", "geist2-organization":"Esotery", mummy1:"Sekhem", demonfallen:"Faith", piper:"Grace" };
     
     [ ...allStats, "rolltype" ].forEach((attr) => {
         on(`change:${attr} change:${attr}_flag`, (eventInfo) => {

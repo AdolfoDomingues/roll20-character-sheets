@@ -46,7 +46,8 @@
 .sheet-demon,
 .sheet-beast,
 .sheet-hunter,
-.sheet-demonfallen {
+.sheet-demonfallen,
+.sheet-piper{
     display: none !important;
 }
 
@@ -78,6 +79,7 @@ input.sheet-type[value="mummy1"] ~ * .sheet-mummy1,
 input.sheet-type[value="mummy2"] ~ * .sheet-mummy2,
 input.sheet-game-line[value="demon"] ~ * .sheet-demon,
 input.sheet-game-line[value="demonfallen"] ~ * .sheet-demonfallen,
+input.sheet-game-line[value="piper"] ~ * .sheet-piper,
 input.sheet-game-line[value="beast"] ~ * .sheet-beast,
 input.sheet-game-line[value="hunter"] ~ * .sheet-hunter {
     display: inline-block !important;
@@ -111,6 +113,7 @@ input.sheet-type[value="mummy1"] ~ * div.sheet-mummy1,
 input.sheet-type[value="mummy2"] ~ * div.sheet-mummy2,
 input.sheet-game-line[value="demon"] ~ * div.sheet-demon,
 input.sheet-game-line[value="demonfallen"] ~ * div.sheet-demonfallen,
+input.sheet-game-line[value="piper"] ~ * div.sheet-piper,
 input.sheet-game-line[value="beast"] ~ * div.sheet-beast,
 input.sheet-game-line[value="hunter"] ~ * div.sheet-hunter {
     display: block !important;
@@ -144,6 +147,7 @@ input.sheet-type[value="mummy1"] ~ * table.sheet-mummy1,
 input.sheet-type[value="mummy2"] ~ * table.sheet-mummy2,
 input.sheet-game-line[value="demon"] ~ * table.sheet-demon,
 input.sheet-game-line[value="demonfallen"] ~ * table.sheet-demonfallen,
+input.sheet-game-line[value="piper"] ~ * table.sheet-piper,
 input.sheet-game-line[value="beast"] ~ * table.sheet-beast,
 input.sheet-game-line[value="hunter"] ~ * table.sheet-hunter {
     display: table !important;
@@ -261,6 +265,10 @@ input.sheet-game-line[value="hunter"] ~ .sheet-background-image::after {
     background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/hunter-bg.png');
     background-size: 100% 100%;
 }
+input.sheet-game-line[value="piper"] ~ .sheet-background-image::after {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/demon-bg.png');
+    background-size: 100% 100%;
+}
 
 input.sheet-settingssheet:checked ~ .sheet-background-image::after,
 input.sheet-page2-sheet:checked ~ .sheet-background-image::after,
@@ -336,6 +344,7 @@ input.sheet-type[value="mummy1"] ~ * button.sheet-active-mummy1,
 input.sheet-type[value="mummy2"] ~ * button.sheet-active-mummy2,
 input.sheet-type[value="demon"] ~ * button.sheet-active-demon,
 input.sheet-type[value="demonfallen"] ~ * button.sheet-active-demonfallen,
+input.sheet-type[value="piper"] ~ * button.sheet-active-piper,
 input.sheet-type[value="beast"] ~ * button.sheet-active-beast {
     color: #2A2D80;
     text-shadow: 0px 0px 10px black;
@@ -458,6 +467,16 @@ input.sheet-game-line[value="beast"] ~ * input.sheet-flag:not([value="0"]) + but
 input.sheet-game-line[value="beast"] ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
 input.sheet-game-line[value="beast"] ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #2A2D80;
+}
+
+input.sheet-type[value="piper"] ~ * button.sheet-active-piper,
+input.sheet-game-line[value="piper"] + span.sheet-attr,
+input.sheet-game-line[value="piper"] ~ input.sheet-attr:checked + span.sheet-attr,
+input.sheet-game-line[value="piper"] ~ * input.sheet-attr:checked + span.sheet-attr,
+input.sheet-game-line[value="piper"] ~ * input.sheet-flag:not([value="0"]) + button.sheet-toggle,
+input.sheet-game-line[value="piper"] ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
+input.sheet-game-line[value="piper"] ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
+    color: #0000FF;
 }
 
 input.sheet-type[value="hunter"] ~ * button.sheet-active-hunter,
