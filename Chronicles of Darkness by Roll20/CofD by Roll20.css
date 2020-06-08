@@ -304,6 +304,9 @@ input.sheet-page3-sheet:checked ~ .sheet-background-image::after {
     .sheet-header img.sheet-demonfallen, {
         height: 85px;
     }
+    .sheet-header img.sheet-piper, {
+        height: 150px;
+    }
 
     button.sheet-toggle {
         /* Resetting user-agent styling */
@@ -467,7 +470,7 @@ input.sheet-game-line[value="beast"] ~ * input.sheet-attr:checked + span.sheet-a
 input.sheet-game-line[value="beast"] ~ * input.sheet-flag:not([value="0"]) + button.sheet-toggle,
 input.sheet-game-line[value="beast"] ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
 input.sheet-game-line[value="beast"] ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #2A2D80;
+    color: #fd920e;
 }
 
 input.sheet-type[value="piper"] ~ * button.sheet-active-piper,

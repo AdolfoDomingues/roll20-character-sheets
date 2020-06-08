@@ -325,7 +325,7 @@
             <span class="demon" data-i18n="catalyst" >Catalyst:</span>
             <span class="demonfallen" data-i18n="visage" >Visage:</span>
             <span class="beast" data-i18n="horror" >Horror:</span>
-            <span class="piper" data-i18n="horror" >Capital Sin:</span>
+            <span class="piper" data-i18n="captalsin" >Capital Sin:</span>
         </div>
         <input type="text" name="attr_GroupName">
     </div>
@@ -2266,6 +2266,7 @@
                             </table>
                         </td>
                     </tr>
+                    
                     <tr class="mortal2-organization vampire werewolf mage promethean changeling geist1 geist2-organization geist2 mummy demon beast piper demonfallen">
                         <td>
                             <table class="potency">
@@ -2318,7 +2319,7 @@
                     <tr>
                         <td class="el_spacer"></td>
                     </tr>
-                    <tbody class="vampire werewolf mage promethean changeling geist1 geist2 mummy demon beast piper">
+                    <tbody class="vampire werewolf mage promethean changeling geist1 geist2 mummy demon">
                         <tr>
                             <td>
                                 <table class="potency">
@@ -2371,6 +2372,30 @@
                         <tr>
                             <td class="rowtext"><input type="text" name="attr_specializations4" /></td>
                         </tr>
+                         <tr class="piper">
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="subheader" data-i18n="glitches">Glitches</td>
+                                </tr>
+                                <tr>
+                                    <td class="rowtext"><input type="text" name="attr_conditions1" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="rowtext"><input type="text" name="attr_conditions2" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="rowtext"><input type="text" name="attr_conditions3" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="rowtext"><input type="text" name="attr_conditions4" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="el_spacer"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
                         <tr>
                             <td class="el_spacer"></td>
                         </tr>
@@ -2393,6 +2418,7 @@
                             <td class="derived"><span data-i18n="initiative">Initiative</span>:<input type="number" name="attr_initiative" value="@{dexterity}+@{composure}+@{initiative_penalty}+@{fast_reflexes}" disabled="disabled" /><span class="vampire1">+<input type="number" name="attr_celerityinitbonus" value="@{celerity}" disabled="disabled" /></span>
                             </td>
                         </tr>
+
                     </tbody>
                     <tr>
                         <td>
