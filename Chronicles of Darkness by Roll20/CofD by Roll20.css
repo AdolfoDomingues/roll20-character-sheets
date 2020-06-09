@@ -470,7 +470,7 @@ input.sheet-game-line[value="beast"] ~ * input.sheet-attr:checked + span.sheet-a
 input.sheet-game-line[value="beast"] ~ * input.sheet-flag:not([value="0"]) + button.sheet-toggle,
 input.sheet-game-line[value="beast"] ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
 input.sheet-game-line[value="beast"] ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #fd920e;
+    color: #2A2D80;
 }
 
 input.sheet-type[value="piper"] ~ * button.sheet-active-piper,
@@ -480,7 +480,7 @@ input.sheet-game-line[value="piper"] ~ * input.sheet-attr:checked + span.sheet-a
 input.sheet-game-line[value="piper"] ~ * input.sheet-flag:not([value="0"]) + button.sheet-toggle,
 input.sheet-game-line[value="piper"] ~ * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
 input.sheet-game-line[value="piper"] ~ * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #0000FF;
+    color: #fd920e;
 }
 
 input.sheet-type[value="hunter"] ~ * button.sheet-active-hunter,
