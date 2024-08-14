@@ -206,7 +206,14 @@
                     <button type="action" class="toggle" name="act_enable_profession" data-i18n="enable-profession">Enable checkboxes next to skills (Normally used for professions, rote skills, etc)</button>
                 </span>
             </div>
-            
+            <div>
+                <span class="checkbox">
+                    <input type="hidden" class="flag" name="attr_attribute_counter" value="0">
+                    <button type="action" name="act_attribute_counter"></button>
+                    <button type="action" class="toggle" name="act_attribute_counter" data-i18n="enable-attribute-number">Use values for attributes and Skills</button>
+                </span>
+            </div>
+
             <!-- WORK IN PROGRESS: This will be a simple way to boost attributes for when characters are in gauru form or receiving other passive bonuses on their attributes 
             <div>
                 <span class="checkbox">
@@ -435,7 +442,16 @@
                     <input type="hidden" class="flag" name="attr_intelligence_flag" value="0" />
                     <button type="action" class="toggle" name="act_intelligence" data-i18n="intelligence">Intelligence</button>
                 </div>
-                <div class="power mental dots">
+                <!-- Inteligence Counter-->
+                <input type="hidden" class="if" name="attr_attribute_counter">
+                    <div class="eq-1 power mental dots">
+                        <div class=" intelligence">
+                        <input type="number" min="0"class="attribute-number"  name="attr_intelligence"/>
+                    </div>
+                 </div>
+                 <!-- Inteligence Dots-->
+                <input type="hidden" class="if" name="attr_attribute_counter">
+                <div class="ne-1 power mental dots">
                     <input type="hidden" name="attr_intelligence" value="1" />
                     <button type="action" class="dot zero" name="act_intelligence-0">×</button>
                     <button type="action" class="dot" name="act_intelligence-1"></button>
@@ -3481,6 +3497,7 @@
             "giant",
             "small_framed",
             "vitae_counter",
+            "attribute_counter",
             "boost_enabler",
             "armor_flag0",
             "armor_flag1",

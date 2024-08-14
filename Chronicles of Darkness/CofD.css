@@ -752,6 +752,13 @@ button.sheet-zero
     opacity: 0;
 }
 
+input.sheet-attribute-number
+{
+    height: 14px;
+    font-size: 11px;
+    width: 60px;
+}
+
 button.sheet-zero:hover {
     opacity: 0.25;
 }
